@@ -1,0 +1,29 @@
+{
+  "name": "kelude/think-crypt",
+  "description": "for ThinkPHP 5",
+  "type": "project",
+  "keywords": [
+    "crypt",
+    "thinkphp"
+  ],
+  "homepage": "https://github.com/kelude/think-crypt",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "kelude",
+      "email": "mail@kelude.org"
+    }
+  ],
+  "require" : {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "topthink/framework": "^5.0",
+    "phpunit/phpunit": "4.8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "think\\": "src/"
+    }
+  }
+}
