@@ -19,7 +19,7 @@ class Crypt {
      * @param integer $expire 有效期（秒） 0 为永久有效
      * @return string
      */
-    public static function encrypt($data,$key,$expire=0){
+    public static function encrypt($data, $key = '',$expire = 0){
         if(empty(self::$handler)){
             self::init();
         }
@@ -33,7 +33,7 @@ class Crypt {
      * @param string $key 加密key
      * @return string
      */
-    public static function decrypt($data,$key){
+    public static function decrypt($data, $key = ''){
         if(empty(self::$handler)){
             self::init();
         }
